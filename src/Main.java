@@ -1,15 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        new Phonebook("Олег", "89147651223");
-        new Phonebook("Михаил", "89147658222");
-        new Phonebook("Анатолий", "89017651209");
-        new Phonebook("Вова", "89017651233");
-        new Phonebook("Андрюха", "89017651211");
-        Phonebook.phonebooks.put("Жорик", "89257897865");
-        Phonebook.phonebooks.put("Димасик", "89257897224");
-        Phonebook.phonebooks.put("Юля", "89257897866");
-        Phonebook.phonebooks.put("Настя", "89257897817");
-        Phonebook.phonebooks.put("Аня", "89257897800");
+        Phonebook phonebook = new Phonebook();
+        phonebook.getPhonebooks().put("Жорик", "89257897865");
+        phonebook.getPhonebooks().put("Димасик", "89257897224");
+        phonebook.getPhonebooks().put("Юля", "89257897866");
+        phonebook.getPhonebooks().put("Настя", "89257897817");
+        phonebook.getPhonebooks().put("Аня", "89257897800");
 
         Phonebook.bookInfo();
 
